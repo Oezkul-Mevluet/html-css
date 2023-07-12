@@ -1,0 +1,25 @@
+-----Aufgabe Möbelhaus------
+füge diesen Ordner in "uebungen/tag2" ein
+
+Aufgabe relative Verlinkung
+
+Im Ordner "moebelhaus" befinden sich einige Ordner in denen jeweils eine index.html liegt und einige weitere HTML-Seiten.
+Du findest in den Seiten jeweils die gleiche Navigation ohne die entsprechenden Verweise in den href Attributen.
+Es geht nun darum hier die richtigen Verweise einzufügen und zwar immer mit relativen Verweisen.
+Der Link der auf die eigene Seite verweist kann als Verweiseziel ein # Hashtag bekommen.
+
+
+Tipp: Wenn ihr im Ordner kueche eine Navigation fertig habt, kopiert diese einfach die anderen Seiten des Ordners.
+Dann müsst ihr dort nur wenig ändern. Letztendlich ist bei relativen Verweiszielen immer der Ordner entscheidend, in dem sich die Seite befindet.
+
+
+ein Beispiel
+von kueche auf Home (Home ist die index.html im Hauptordner moebelhaus
+
+<a href="../../index.html">Home</a>
+
+Achtet auf Groß- Kleinschreibung bei den Verweisen.
+Siehe den Tipp relative Verweise:
+https://www.on-design.de/tutor/html5_css3/html5/hyperlinks.html#relativeLinks
+
+

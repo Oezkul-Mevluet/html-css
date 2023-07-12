@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'African';
+	src: url('African.eot');
+	src: url('African.eot?#iefix') format('embedded-opentype'),
+		url('African.woff') format('woff'),
+		url('African.ttf') format('truetype'),
+		url('African.svg') format('svg');
+}

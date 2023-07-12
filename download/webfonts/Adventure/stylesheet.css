@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Adventure';
+	src: url('Adventure.eot');
+	src: url('Adventure.eot?#iefix') format('embedded-opentype'),
+		url('Adventure.woff') format('woff'),
+		url('Adventure.ttf') format('truetype'),
+		url('Adventure.svg') format('svg');
+}

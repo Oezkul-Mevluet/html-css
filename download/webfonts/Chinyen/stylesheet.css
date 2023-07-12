@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Chinyen';
+	src: url('Chinyen.eot');
+	src: url('Chinyen.eot?#iefix') format('embedded-opentype'),
+		url('Chinyen.woff') format('woff'),
+		url('Chinyen.ttf') format('truetype'),
+		url('Chinyen.svg') format('svg');
+}

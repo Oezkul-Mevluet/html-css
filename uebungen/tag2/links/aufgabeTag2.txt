@@ -1,0 +1,21 @@
+-----Aufgabe Möbelhaus------
+Lade moebelhaus.zip herunter und entpacke diese in deinem Ordner "uebungen"
+
+Aufgabe relative Verlinkung
+
+Im Ordner "moebelhaus" befinden sich einige Ordner in denen jeweils eine index.html liegt und einige weitere HTML-Seiten.
+Der Link der auf die eigene Seite verweist bekommt als Verweisziel ein #
+
+Es geht darum in jeder Seite eine Navigaton einzufügen, welche zu den anderen Seiten verweist.
+Tipp: Wenn ihr im Ordner kueche eine Navigation fertig habt, kopiert diese einfach die anderen Seiten des Ordners.
+Dann müsst ihr dort nur wenig ändern.
+
+
+
+
+
+
+
+
+
+
