@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ol Ordered List / Geordnete Listen</title>
 </head>
+
 <body>
     <h1>ol Ordered List / Geordnete Listen</h1>
-        <p><a href="https://www.on-design.de/tutor/html5_css3/html5/grouping/ol.html">Tipp ol</a></p>
-    
-<p>In einer Liste wie ol, ul, menu dürfen nur li Elemente als Kindelemente eingefügt werden.</p>
-<p>In den li Elementen kann man andere Elemente verschachteln.</p>
+    <p><a href="https://www.on-design.de/tutor/html5_css3/html5/grouping/ol.html">Tipp ol</a></p>
+    <p>In einer Liste wie ol, ul, menu dürfen nur li Elemente als Kindelemente eingefügt werden.</p>
+    <p>In den li Elementen kann man andere Elemente verschachteln.</p>
     <ol>
-    <li>Lakritz</li>
-    <li>Gummibärchen</li>
-    <li>Bonbons</li>
-    <li>Schokolade</li>
+        <li>Lakritz</li>
+        <li>Gummibärchen</li>
+        <li>Bonbons</li>
+        <li>Schokolade</li>
     </ol>
 
- 
-<!-- (ol>li*4)*4 -->
 
-<!-- ol>li*4 -->
+    <!-- (ol>li*4)*4 -->
 
-<p>Aufzählungszeichen type="a" <br>  a A i I</p>
+    <!-- ol>li*4 -->
 
-<ol type="a">
-    <li>Ford</li>
-    <li>Opel</li>
-    <li>VW</li>
-    <li>BMW</li>
-</ol>
+    <p>Aufzählungszeichen type="a" <br> a A i I</p>
+
+    <ol type="a">
+        <li>Ford</li>
+        <li>Opel</li>
+        <li>VW</li>
+        <li>BMW</li>
+    </ol>
 
 
 
-<ol type="I" >
-    <li>Cäsar</li>
-    <li>Nero</li>
-    <li>Caligula</li>
-    <li>Augustus</li>
-</ol>
+    <ol type="I">
+        <li>Cäsar</li>
+        <li>Nero</li>
+        <li>Caligula</li>
+        <li>Augustus</li>
+    </ol>
 
-<ol>
-    <li>Hamburg</li>
-    <li>Bremen</li>
-    <li>Osnabrück</li>
-</ol>
-<p>Weiteren Standorte im Süden.</p>
+    <ol>
+        <li>Hamburg</li>
+        <li>Bremen</li>
+        <li>Osnabrück</li>
+    </ol>
+    <p>Weiteren Standorte im Süden. Die nächste Liste beginnt mit 4 durch das Attribut start="4" innerhalb des ol-
+        Elements</p>
 
-<ol start="4">
-    <li>Frankfurt</li>
-    <li>Mainz</li>
-    <li>Stuttgart</li>
-    <li>München</li>
-</ol>
-<p>Der Startwert ist immer eine Ganzzahl start="3"</p>
-<ol type="a" start="3">
-    <li>Ford</li>
-    <li>Opel</li>
-    <li>VW</li>
-    <li>BMW</li>
-</ol>
+    <ol start="4">
+        <li>Frankfurt</li>
+        <li>Mainz</li>
+        <li>Stuttgart</li>
+        <li>München</li>
+    </ol>
+    <p>Der Startwert ist immer eine Ganzzahl start="3", auch wenn die Aufzählungszeichen keine Ganzzahlen sind.</p>
+    <ol type="a" start="3">
+        <li>Ford</li>
+        <li>Opel</li>
+        <li>VW</li>
+        <li>BMW</li>
+    </ol>
 
-<p>reversed rückwärts</p>
-<ol reversed type="a">
-    <li>Asien</li>
-    <li>Europa</li>
-    <li>Afrika</li>
-    <li>Amerika</li>
-    <li>Australien</li>
-</ol>
-<p>value="5" in einem li Element zählt ab dem Wert 5 weiter. Es ist immer eine Ganzzahl.</p>
-<ol>
-    <li>Asien</li>
-    <li>Europa</li>
-    <li value="5">Afrika</li>
-    <li>Amerika</li>
-    <li>Australien</li>
-</ol>
+    <p>reversed rückwärts</p>
+    <ol reversed type="a">
+        <li>Asien</li>
+        <li>Europa</li>
+        <li>Afrika</li>
+        <li>Amerika</li>
+        <li>Australien</li>
+    </ol>
+    <p>value="5" in einem li Element zählt ab dem Wert 5 weiter. Es ist immer eine Ganzzahl.</p>
+    <ol>
+        <li>Asien</li>
+        <li>Europa</li>
+        <li value="5">Afrika</li>
+        <li>Amerika</li>
+        <li>Australien</li>
+    </ol>
 
-<ol style="list-style-type: georgian;">
-    <li>Hamburg</li>
-    <li>Bremen</li>
-    <li>Osnabrück</li>
-</ol>
+    <ol style="list-style-type:georgian">
+        <li>Hamburg</li>
+        <li>Bremen</li>
+        <li>Osnabrück</li>
+    </ol>
+
 
 </body>
+
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Auswahlliste</title>
+</head>
+
+<body>
+    <h1>Select Auswahlliste</h1>
+    <form action="#">
+        <p> Mit wem würden Sie gerne essen gehen.
+            <br>Mehrfachauswahl mit gedrückter <kbd>Strg Taste</kbd>
+        </p>
+        <label for="promi">Promi</label> <br>
+        <select name="promi" id="promi" multiple size="5">
+            <option value="">---bitte auswählen---</option>
+            <optgroup label="Jenseits">
+                <option value="che">Che Guevara</option>
+                <option value="pius">Papst Pius</option>
+                <option value="jimi">Jimi Hendrix</option>
+            </optgroup>
+            <optgroup label="Diesseits">
+                <option value="jackiChan">Jackie Chan</option>
+                <option value="charlize">Charlize Theron</option>
+                <option value="keanu">Keanu Reeves</option>
+                <option value=""></option>
+            </optgroup>
+        </select>
+
+    </form>
+</body>
+
+</html>

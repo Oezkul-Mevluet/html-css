@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaltengruppen</title>
+    <style>
+        td,
+        th {
+            border: 1px solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Spaltengruppen in Tabellen</h1>
+    <table>
+        <caption>Produkte</caption>
+
+        <colgroup>
+            <col style="background-color:#ff9">
+            <col span="3" style="background-color: #faa">
+            <col span="2" style="background-color:aqua">
+        </colgroup>
+
+        <tr>
+            <th>Produkt</th>
+            <th>Art.Nr.</th>
+            <th>Gewicht</th>
+            <th>Material</th>
+            <th>Einkaufspreis</th>
+            <th>Verkaufspreis</th>
+        </tr>
+        <!-- tr*3>td*6 -->
+
+        <tr>
+            <td>Rohr 200</td>
+            <td>3454</td>
+            <td>1kg</td>
+            <td>Aluminium</td>
+            <td>1,00 €</td>
+            <td>25,00 €</td>
+        </tr>
+
+        <tr>
+            <td>Rohrwinkel</td>
+            <td>2349</td>
+            <td>2kg</td>
+            <td>Kupfer</td>
+            <td>1,35 €</td>
+            <td>30,00 €</td>
+        </tr>
+
+        <tr>
+            <td>Kran 45</td>
+            <td>4304</td>
+            <td>1,3kg</td>
+            <td>Gußeisen</td>
+            <td>0,90 €</td>
+            <td>13,00 €</td>
+        </tr>
+    </table>
+</body>
+
+</html>

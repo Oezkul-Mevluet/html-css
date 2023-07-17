@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular label</title>
+</head>
+
+<body>
+    <!-- action="absenden.php" Verweis auf ein Programm welches die Daten empfängt und verarbeitet
+method get post  
+-->
+    <form action="#" method="post">
+
+
+        <p> <label for="prename">Vorname*</label><br> <input type="text" name="vorname" id="prename" required
+                maxlength="10" minlength="2" placeholder="Bitte Namen eintragen"> </p>
+
+        <p> <label for="name">Nachname*</label><br> <input type="text" name="name" id="name" required> </p>
+
+        <p> <label for="adresse">Adresse</label><br> <input type="text" name="adresse" id="adresse"> </p>
+
+        <p> <label for="plz">PLZ</label><br><input type="number" name="plz" id="plz"> </p>
+
+        <p> <label for="ort">Wohnort</label><br> <input type="text" name="ort" id="ort"> </p>
+
+        <p> <label for="email">Ihre Email</label> <br><input type="email" name="email" id="email"> </p>
+
+        <p>
+            <label for="news">Ihre Nachricht</label><br>
+
+            <!-- Mehrzeiliges Eingabefeld value Attribut gibt es hier nicht
+           stattdessen fügt man die Vorbelegung zwichen Anfangstag und Endtag ein 
+           oder man benutzt das Attribut placeholder
+           -->
+            <textarea name="news" id="news" rows="10"></textarea>
+        </p>
+
+        <input type="submit" value="Abschicken"> <input type="reset">
+
+    </form>
+</body>
+
+</html>

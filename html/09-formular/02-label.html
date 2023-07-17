@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular label</title>
+</head>
+
+<body>
+    <!-- action="absenden.php" Verweis auf ein Programm welches die Daten empfängt und verarbeitet
+method get post  
+-->
+    <form action="#" method="post">
+        <!-- Wert in for von label und Wert in id von input müssen gleich sein
+    explizite Variante von label
+     -->
+
+        <label for="prename">Vorname</label> <input type="text" name="vorname" id="prename"> <br>
+
+        <!-- implizite label Variante das input Feld wird im label eingeschlossen / verschachtelt -->
+
+        <label>Nachname<input type="text" name="nachname"></label>
+
+        <input type="submit" value="send">
+
+    </form>
+</body>
+
+</html>

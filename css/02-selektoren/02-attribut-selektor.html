@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribut Selektor</title>
+    <style>
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 10rem
+        }
+
+        label {
+            display: inline-block;
+            width: 10rem;
+            vertical-align: top;
+        }
+
+        img[title^="Friedhof"] {
+            padding: 20px;
+            border: 1px solid;
+        }
+
+        img[title*="Dortmund"] {
+            background-color: red;
+        }
+
+        img[title$="Friedhof"] {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Attribut Selektor</h1>
+
+    <form action="#" method="get">
+
+        <p><label for="prename">Vorname</label> <input type="text" name="vorname" id="prename"> </p>
+        <p><label for="name">Nachname *</label> <input type="text" name="name" id="name" required> </p>
+        <p><label for="email">Email</label> <input type="email" name="email" id="email"> </p>
+        <p><label><input type="radio" name="news" value="ja" checked></input>ja</label> <label><input type="radio"
+                    name="news" value="nein"></input>nein</label></p>
+
+        <p><label for="nachricht">Nachricht</label>
+            <textarea name="nachricht" id="nachricht" cols="30" rows="10"></textarea>
+        </p>
+
+        <input type="submit"> <input type="reset">
+
+    </form>
+
+
+
+    <h2>Inline-block und Breite / Höhe</h2>
+    <p>Inline Elementen kann man keine Breite und Höhe zuweisen
+    </p>
+
+    <p><img src="angel1.jpg" alt="figur" title="Friedhof Dortmund"></p>
+    <p><img src="angel2.jpg" alt="figur" title="Friedhof Essen"></p>
+    <p><img src="angel3.jpg" alt="figur" title=" Bochum Friedhof"></p>
+
+</body>
+
+</html>
