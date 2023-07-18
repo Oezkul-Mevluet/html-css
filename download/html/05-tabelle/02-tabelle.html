@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelle</title>
+    <style>
+        td,
+        th {
+            border: 1px solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelle</h1>
+
+    <table>
+        <caption>Test</caption>
+        <!-- tr>td*4 -->
+        <tr>
+            <td colspan="2">Zelle</td>
+            <td>Zelle</td>
+            <td rowspan="3">Zelle</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Zelle1</td>
+            <td>Zelle</td>
+            <td>Zelle</td>
+
+        </tr>
+
+        <tr>
+            <td>Zelle reihe3</td>
+            <td>Zelle reihe3</td>
+
+        </tr>
+
+        <tr>
+            <td colspan="4">Zelle</td>
+        </tr>
+
+    </table>
+
+    <!-- table>tr*6>td*4>{Zelle $} -->
+
+    <table>
+        <tr>
+            <td colspan="3">Zelle 1</td>
+
+            <td rowspan="3">Zelle 4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Zelle 1</td>
+            <td>Zelle 2</td>
+            <td>Zelle 3</td>
+
+        </tr>
+        <tr>
+            <td colspan="2">Zelle 1</td>
+
+
+
+        </tr>
+        <tr>
+            <td>Zelle 1</td>
+            <td>Zelle 2</td>
+            <td>Zelle 3</td>
+            <td>Zelle 4</td>
+        </tr>
+        <tr>
+            <td>Zelle 1</td>
+            <td>Zelle 2</td>
+            <td>Zelle 3</td>
+            <td>Zelle 4</td>
+        </tr>
+        <tr>
+            <td>Zelle 1</td>
+            <td>Zelle 2</td>
+            <td>Zelle 3</td>
+            <td>Zelle 4</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

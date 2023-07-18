@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodell box-sizing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            /*  width: calc(50% - 42px); */
+            width: 50%;
+            float: left;
+        }
+
+        .box1 {
+            padding: 10px;
+            border: 1px solid;
+        }
+
+        .box2 {
+            padding: 30px;
+            border: 5px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Boxmodell box-sizing</h1>
+    <div class="box1">Box 1 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. </div>
+    <div class="box2">Box 2 Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+</body>
+
+</html>

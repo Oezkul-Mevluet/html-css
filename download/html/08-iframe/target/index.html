@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Hauptseite Iframe</title>
+    <style>
+        iframe {
+            width: 600px;
+            height: 400px;
+            border: 2px solid red;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Iframes</h1>
+    <p>
+        <a href="seite1.html" target="myFrame">Seite 1</a> /
+        <a href="seite2.html" target="myFrame">Seite 2</a> /
+        <a href="seite3.html" target="myFrame">Seite 3</a>
+    </p>
+
+
+    <iframe src="seite1.html" frameborder="1" name="myFrame"></iframe>
+
+</body>
+
+</html>

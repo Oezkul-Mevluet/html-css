@@ -1,0 +1,157 @@
+
+<!doctype html> <!-- Kommentar  -->
+<html lang="de">
+<head>
+
+<title>HTML5 </title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link href="../../../css/albers.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: .8em;
+	color: #191b14;
+}
+fieldset {
+	background-color: #aaf4f4;
+	width: 300px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+h1 {
+	text-align: center;
+}
+</style>
+</head>
+<body><div id="wrap">
+
+<h1>Email Formular</h1>
+<form id="wunsch" action="absenden.php" method="post" enctype="application/x-www-form-urlencoded">
+
+<fieldset><legend>Absender</legend>
+<p><label for="first_name">Vorname:</label><br>
+<input type="text" size="40" name="first_name" id="first_name"></p>
+
+<p><label for="last_name">Nachname:</label><br>
+<input type="text" size="40" name="last_name" id="last_name"></p>
+
+<p><label for="adresse">Adresse:</label><br>
+<input type="text" size="40" name="adresse" id="adresse"></p>
+
+<p><label>Ihre Email Adresse:<br>
+<input type="text" size="40" name="email" required></label></p>
+
+<p><label>Telefon:<br>
+<input type="text" size="40" name="telephone" placeholder="Bitte eintragen"></label></p>
+
+
+
+</fieldset>
+
+<fieldset><legend>Ihre Nachricht</legend>
+
+
+<p><label>Nachricht:<br>
+<textarea name="comments" cols="30" rows="10"></textarea></label></p>
+
+</fieldset>
+
+<fieldset><legend>Eingaben</legend>
+<input type="submit" value="Absenden">
+</fieldset>
+</form>
+<p>Dieses Emailformular verschickt keine Emails. Ladet euch die ZIP Datei herunter.</p>
+<p><a href="formular.zip">Download ZIP Datei: Emailformular mit PHP </a></p>
+<p>&nbsp;</p>
+<!-- &nbsp; kaçış dizisi, "non-breaking space" olarak da bilinir ve HTML'de kullanılan özel bir karakterdir. Bu karakter, normal bir boşluk karakterinden farklıdır çünkü boşluğun olması gereken yerde bile satırın bölünmesini önler. Yani, tarayıcı bir paragrafta normal bir boşluk karakteri gördüğünde, iki kelime arasında bir satır sonu oluşturabilir. Ancak &nbsp; karakteri kullanıldığında, bu satır sonu oluşmaz ve kelimeler bir arada kalır.
+
+<p>&nbsp;</p> kodu, bir boş paragraf oluşturmak için kullanılabilir. Bu, bir paragrafta görünen boş bir satır eklemek veya bir paragrafta içeriğin başlangıcında veya sonunda bir boşluk bırakmak için kullanılabilir.
+
+Örneğin, aşağıdaki kod bir paragrafın başında ve sonunda boşluk bırakır:
+
+html
+Copy code
+<p>
+  &nbsp; Bu paragrafın başında ve sonunda boşluk bırakılıyor. &nbsp;
+</p>
+Sonuç olarak, tarayıcı bu kodu işlediğinde, paragraf içeriği normal olarak görünecek, ancak başlangıçta ve sondaki boşluklar korunacaktır. Bu şekilde, metnin tasarımında veya düzeninde istenen bir boşluğu elde etmek mümkün olabilir. -->
+
+<!--<legend></legend>
+<fieldset> öğesi, web formunda ilişkili bir grup form elemanını bir araya getiren bir konteynerdir. Örneğin, bir formda kişisel bilgileri içeren alanları, bir <fieldset> öğesi ile gruplayabilirsiniz. Bu durumda, <legend> öğesi, bu grup alanın başlığını veya açıklamasını sağlar.
+
+İşte bir örnek:
+
+html
+Copy code
+<fieldset>
+  <legend>Kişisel Bilgiler</legend>
+  <label for="name">Ad:</label>
+  <input type="text" id="name" name="name" required>
+  <br>
+  <label for="email">E-posta:</label>
+  <input type="email" id="email" name="email" required>
+</fieldset>
+Yukarıdaki örnekte, <legend> öğesi "Kişisel Bilgiler" metnini içeriyor. Bu metin, fieldset öğesinin başlığını veya açıklamasını temsil eder. Tarayıcılar genellikle <legend> öğesini grup başlığı olarak gösterir ve bu sayede kullanıcılar, formdaki alanları doğru bir şekilde anlamalarına yardımcı olur.
+
+<legend> öğesinin içeriği, genellikle metin veya diğer HTML öğeleri olabilir. Örneğin, başlık metnini biçimlendirmek için <legend> öğesini <h2> etiketiyle birleştirebilirsiniz:
+
+html
+Copy code
+<fieldset>
+  <legend><h2>Kişisel Bilgiler</h2></legend>
+  Form alanları buraya eklenecek
+</fieldset>
+<legend> öğesinin kullanımı, form alanlarını veya veri gruplarını açıklamak veya başlıklandırmak için daha iyi anlaşılırlık ve erişilebilirlik sağlamak amacıyla önemlidir.-->
+
+	<form>
+		<input type="radio" name="farbe" value="rot"> rot <br>
+		<input type="radio" name="farbe" value="blau" disabled> blau <br>
+		<input type="radio" name="farbe" value="gelb"> gelb <br>
+		<input type="radio" name="farbe" value="yellow" checked> yellow<br>
+	</form>
+	<br><br><br>
+
+	<form>
+		<input type="checkbox" name="zimmer[]" value="raucher"> Raucher <br>
+		<input type="checkbox" name="zimmer[]" value="bar"> Minibar<br>
+		<input type="checkbox" name="zimmer[]" value="doppel"> Doppelzimmer <br>
+		<input type="checkbox" name="zimmer[]" value="tv" checked> Fernseher 
+	</form>
+	<br><br><br>
+	<form>
+		<input type="checkbox" name="gruen"> grün <br>
+		<input type="checkbox" name="rot"> rot<br>
+		<input type="checkbox" name="blau"> blau <br>
+	</form>
+	<br><br><br>
+<label for="promi">Promi</label>
+<br>
+<select name="favoriteStar[]" id="promi">
+<option value=" ">--bitte auswählen--</option>
+<option value="che">Che Guevara</option>
+<option value="pius">Papst Pius</option>
+<option value="hase">Osterhase</option>
+<option value="alice">Alice Cooper</option>
+<option value="peter">Peter Alexander</option>
+</select>
+</div></body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

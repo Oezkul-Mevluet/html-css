@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Selektoren Basic</title>
+    <style>
+        /*Sternchen alle Elemente*/
+        /*   *{margin: 0px} */
+
+        .wichtig {
+            font-weight: bold;
+            color: red;
+        }
+
+        /* gebundener Selektor */
+
+        h2.wichtig {
+            color: green;
+        }
+
+        nav>ul>li>a {
+            color: green
+        }
+
+        nav>ul>li>ul>li>a {
+            color: blue;
+        }
+
+        nav ul ul a {
+            font-weight: bold;
+        }
+
+        main section p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header>section>p {
+            font-size: 1.7em;
+        }
+
+        header {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Selektoren / Nachfahren- / Kind- Kombinator</h1>
+        <section>
+            <p>Spruch im Header </p>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="">Seite 1</a></li>
+                <li><a href="">Seite 2</a>
+                    <ul>
+                        <li><a href="">Unterseite 1</a></li>
+                        <li><a href="">Unterseite 2</a></li>
+                        <li><a href="">Unterseite 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Seite 3</a></li>
+                <li><a href="">Seite 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="wichtig">
+            <h2 class="wichtig">Artikel</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eos eveniet rem ipsam placeat corporis
+                cupiditate aut sapiente necessitatibus magni eaque adipisci libero ipsa ratione architecto ad quisquam,
+                ab maiores?</p>
+        </article>
+        <section>
+            <h2>Section</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum iure at atque saepe dolor laborum obcaecati
+                illo deleniti suscipit, adipisci quis quod perferendis maxime sunt? Dolorem officia velit tempora autem?
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <a href="datenschutz.html">Datenschutzerklärung</a> / <a href="impressum.html">Impressum</a>
+        </p>
+    </footer>
+</body>
+
+</html>

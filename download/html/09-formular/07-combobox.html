@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combobox / Datalist mit Input Element</title>
+</head>
+
+<body>
+    <h1>Combobox / Datalist mit Input Element</h1>
+
+    <form action="#">
+        <!-- list Attribut im input und id im datalist brauchen den gleichen Wert  -->
+        <p><label for="staat">Ihr Urlaubsland</label></p>
+        <p><input type="text" name="staat" id="staat" list="staatenliste"></p>
+        <datalist id="staatenliste">
+            <option value="Deutschland">
+            <option value="Frankreich">
+            <option value="Spanien">
+            <option value="Italien">
+            <option value="Griechenland">
+            <option value="Irland">
+            <option value="Indien">
+            <option value="Marokko">
+
+        </datalist>
+
+        <input type="submit">
+
+    </form>
+
+</body>
+
+</html>

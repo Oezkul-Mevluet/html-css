@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barrierefreie Tabelle</title>
+    <style>
+        td,
+        th {
+            border: 1px solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Barrierefreie Tabelle</h1>
+
+    <table>
+        <caption>Städte</caption>
+
+        <tr>
+            <th>Städte</th>
+            <th scope="col">Hamburg</th>
+            <th scope="col">Dortmund</th>
+            <th scope="col">München</th>
+        </tr>
+        <tr>
+            <th scope="row">Bundesland</th>
+            <td>Hamburg</td>
+            <td>NRW</td>
+            <td>Bayern</td>
+        </tr>
+        <tr>
+            <th scope="row">Einwohner</th>
+            <td>1,7 Mill</td>
+            <td>0,5 Mill</td>
+            <td>1,5 Mill</td>
+        </tr>
+        <tr>
+            <th scope="row">Fußballclub</th>
+            <td>HSV</td>
+            <td>BVB</td>
+            <td>FC Bayern München</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

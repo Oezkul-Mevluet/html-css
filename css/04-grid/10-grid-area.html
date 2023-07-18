@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        header,
+        section,
+        article,
+        aside,
+        nav,
+        footer {
+            border: 1px solid;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "header header header" "... nav ..." "article1 article2 article3" " section section aside" " footer footer footer"
+        }
+
+        header {
+            grid-area: header;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        .art1 {
+            grid-area: article1;
+        }
+
+        .art2 {
+            grid-area: article2;
+        }
+
+        .art3 {
+            grid-area: article3;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Baumarkt Hobler</h1>
+        <p>Es kommmt der Tag da will die Säge sägen.</p>
+    </header>
+    <nav>Home Produkte Team Kontakt</nav>
+
+    <!-- article*6>(h2>{Artikel $})+p*2>lorem -->
+    <article class="art1">
+        <h2>Artikel 1</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, consectetur assumenda, error nihil quo
+            dolor et repellendus enim nisi deserunt veritatis iure! Voluptate nemo, molestias deserunt ipsum et maxime
+            minima.
+        </p>
+        <p>Consequuntur, dolores quos tempore architecto assumenda molestias dolor, repellendus ab aut quam fugit id
+            magnam dolore tempora magni eaque saepe ullam. In quisquam pariatur illo aspernatur iure sunt quo
+            exercitationem?
+        </p>
+    </article>
+    <article class="art2">
+        <h2>Artikel 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maiores debitis ab libero modi necessitatibus
+            aliquid. Corrupti esse est facilis quaerat doloribus pariatur ullam, impedit reprehenderit, quam
+            necessitatibus dolorem iusto!</p>
+        <p>Hic delectus repudiandae nihil numquam ut commodi dicta quas quo repellendus reprehenderit eum sunt animi in
+            expedita, vitae ipsam placeat error sint impedit modi itaque, exercitationem unde incidunt! Repellat, vero!
+        </p>
+    </article>
+    <article class="art3">
+        <h2>Artikel 3</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga accusamus tempore eius iure ducimus sapiente,
+            quibusdam asperiores repudiandae suscipit hic velit officiis aliquam quae quis dignissimos esse numquam
+            quaerat deleniti?</p>
+        <p>Quae illo laudantium quisquam aspernatur magni consectetur aliquid rem, soluta dicta atque voluptatem totam
+            molestiae eveniet quos aperiam! Quam, nesciunt! Saepe officia perferendis earum adipisci, consequuntur
+            laudantium molestias maxime blanditiis.</p>
+    </article>
+    <section>
+        <h2>Section</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maiores saepe libero assumenda nihil
+            mollitia! Distinctio libero alias eos illo, consequatur pariatur ea aut quasi nemo deserunt sunt ipsum
+            quibusdam.
+        </p>
+        <p>Facere inventore sed quod architecto nemo! Neque, laudantium fugiat? Quasi, unde sit. Porro aperiam
+            consequatur eaque magni minima sunt cupiditate in totam soluta dolorem adipisci, ipsam saepe maiores
+            deserunt repudiandae.</p>
+        <p>Deleniti pariatur rem sequi dolor, nam odit repellat iusto quia vel, doloremque, modi ea sunt odio ipsam!
+            Pariatur explicabo dolores et? Consequatur illo animi officia nihil obcaecati quaerat facere! Provident!</p>
+    </section>
+    <aside>
+        <h2>Aside</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio voluptatibus quia iusto repudiandae quasi
+            adipisci ipsam nulla non sint omnis mollitia vel, tempore, assumenda, molestiae porro. Laudantium dolor
+            ipsum voluptates.</p>
+        <p>Ex voluptatum, vel porro incidunt quisquam quo a optio quaerat recusandae corrupti, ad iure magni ut
+            doloribus nulla sed quibusdam. Neque mollitia quae voluptatibus aperiam. Enim distinctio ab blanditiis iure.
+        </p>
+        <p>Ipsam, illum eos labore iusto quas eaque, amet dignissimos libero ea voluptatum architecto tempora ratione
+            est voluptate modi non necessitatibus quis consequatur. Ratione accusantium expedita, distinctio dicta iusto
+            provident veritatis!</p>
+    </aside>
+    <footer>AGB Impressum Datenschutz</footer>
+
+</body>
+
+</html>

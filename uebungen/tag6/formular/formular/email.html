@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- dieses Emailformular benötigt die Seiten send_email.php für das Verschicken und fehler.php und ok.php für die Überprüfung -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sendmail</title>
+	<style>
+body {
+	font-family: Calibri, Arial, Helvetica, Sans-Serif;
+	font-size: 62.5%;
+}
+input[type=text] {
+	width: 250px;
+	padding: 3px;
+	border: 1px solid #5F0000;
+	margin: 3px 0;
+}
+textarea {
+	width: 250px;
+}
+label, .anrede {
+	color: #5F0000;
+	display: inline-block;
+	width: 8em;
+	cursor: pointer;
+	font-size: 1.5em;
+	vertical-align: top;
+	font-weight: bold;
+}
+label[for^="gender"] {
+	width: 1.5em;
+}
+input[type="radio"] {
+margin-right: 2.5rem;
+}
+fieldset {
+	max-width: 500px;
+	margin: auto;
+}
+</style>
+</head>
+
+<body>
+	<form method="post" action="send_email.php">
+		<fieldset>
+			<p> <span class="anrede">Title</span>
+				<label for="gender_male">Mr.</label>
+				<input name="geschlecht" type="radio" value="male" id="gender_male">
+				<label for="gender_female">Ms.</label>
+				<input name="geschlecht" type="radio" value="female" id="gender_female">
+			</p>
+			<p>
+				<label for="Vorname"><b>First Name:</b></label>
+				<input type="text" id="Vorname" name="Vorname">
+			</p>
+			<p>
+				<label for="Name"><b>Last Name:</b></label>
+				<input type="text" id="Name" name="Name">
+			</p>
+			<p>
+				<label for="Email"><b>E-Mail:</b></label>
+				<input type="text" id="Email" name="Email">
+			</p>
+			<p>
+				<label for="Telefon"><b>Phone/ Mobile:</b></label>
+				<input type="text" id="Telefon" name="Telefon">
+			</p>
+			<p>
+				<label for="Nachricht"><b>Nachricht:</b></label>
+				<textarea id="Nachricht" name="Nachricht" rows="10" cols="50"></textarea>
+			</p>
+			<input type="submit" name="submit">
+		</fieldset>
+	</form>
+</body>
+</html>
