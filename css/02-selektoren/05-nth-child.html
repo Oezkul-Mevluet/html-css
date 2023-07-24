@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS nth:child</title>
+    <style>
+        .liste1 li:nth-child(n+6) {
+            background-color: green;
+        }
+
+        .liste2 li:nth-child(2n) {
+            background-color: green;
+        }
+
+        .liste3 li:nth-child(3n + 1) {
+            background-color: red;
+        }
+
+        .liste4 li:nth-child(-n + 6) {
+            background-color: yellow;
+        }
+
+        .liste5 li:nth-child(odd) {
+            background-color: green;
+        }
+
+        .liste6 li:nth-child(even) {
+            background-color: #ff00c3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ul.liste$*6>li*10>{Element $} -->
+
+    <ul class="liste1">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+        <li>Element 8</li>
+        <li>Element 9</li>
+        <li>Element 10</li>
+    </ul>
+    <ul class="liste2">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+        <li>Element 8</li>
+        <li>Element 9</li>
+        <li>Element 10</li>
+    </ul>
+    <ul class="liste3">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+        <li>Element 8</li>
+        <li>Element 9</li>
+        <li>Element 10</li>
+    </ul>
+    <ul class="liste4">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+        <li>Element 8</li>
+        <li>Element 9</li>
+        <li>Element 10</li>
+    </ul>
+    <ul class="liste5">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+        <li>Element 8</li>
+        <li>Element 9</li>
+        <li>Element 10</li>
+    </ul>
+    <ul class="liste6">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Element 7</li>
+        <li>Element 8</li>
+        <li>Element 9</li>
+        <li>Element 10</li>
+    </ul>
+
+
+
+
+</body>
+
+</html>

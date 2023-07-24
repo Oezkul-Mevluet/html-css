@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selektor before after</title>
+    <style>
+        h1:before {
+            content: "Das schöne ";
+        }
+
+        h2:after {
+            content: " ist schön.";
+        }
+
+        p::before {
+            content: url("apfel.png");
+        }
+
+        p::after {
+            content: " €";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dortmund</h1>
+
+    <h2>Bochum </h2>
+    <p>Äpfel 1kg 3,50</p>
+</body>
+
+</html>

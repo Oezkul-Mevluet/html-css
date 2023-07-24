@@ -1,9 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -11,6 +16,7 @@ header {
     padding: 40px;
     background-image: url("img/flamingo.jpg");
     background-position: bottom right;
+    background-size: auto 100%;
     text-align: center;
 }
 
@@ -18,11 +24,12 @@ header h1 {
     color: #78d778;
     font-size: 3rem;
     margin: 0;
+    text-shadow: 2px 2px 1px #000;
 }
 
 nav {
     background-color: #78d778;
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5)
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -49,8 +56,27 @@ nav ul a:hover {
     color: #78d778;
 }
 
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+    background-color: #89e289;
+    position: absolute;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 footer {
     background-color: #78d778;
     padding: 25px;
     text-align: center;
+}
+
+footer a {
+    color: green;
 }

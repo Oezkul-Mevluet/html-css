@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div {
+            border: 1px solid;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        section {
+            height: 60vh;
+            border: 1px solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        section>div:nth-child(2) {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox</h1>
+
+    <section>
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3 <br> zeile <br> zeile</div>
+        <div>Box 4</div>
+        <div>Box 5</div>
+        <div>Box 6</div>
+    </section>
+
+</body>
+
+</html>

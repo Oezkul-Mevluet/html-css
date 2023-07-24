@@ -4,12 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Dortmund</title>
     <link rel="stylesheet" href="layout.css">
-    <title>Zoo</title>
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        main article figure img {
+            max-width: 100%;
+        }
+
+        main figure {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 700px) {
+            main {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            main h2 {
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: 380px) {
+            main {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
     <header>
         <h1>Zoo Dortmund</h1>
     </header>
@@ -17,7 +47,16 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="tiere.html">Tiere</a></li>
+            <li><a href="tiere.html">Tiere</a>
+                <ul>
+                    <li><a href="tiere.html#elefant">Elefant</a></li>
+                    <li><a href="tiere.html#giraffe">Giraffe</a></li>
+                    <li><a href="tiere.html#nashorn">Nashorn</a></li>
+                    <li><a href="tiere.html#pelikan">Pelikan</a></li>
+                    <li><a href="tiere.html#strauss">Strauß</a></li>
+                    <li><a href="tiere.html#wolf">Wolf</a></li>
+                </ul>
+            </li>
             <li><a href="team.html">Team</a></li>
             <li><a href="events.html">Event</a></li>
             <li><a href="anfahrt.html">Anfahrt</a></li>
@@ -25,6 +64,93 @@
     </nav>
 
     <main>
+        <!--    article*6>h2+(figure>img)+p>lorem -->
+
+        <article id="elefant">
+            <h2>Elelefant</h2>
+            <figure><img src="img/elefant.jpg" alt="Elefant"></figure>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum animi voluptatibus, eaque odio amet
+                repudiandae eligendi, iusto veniam, omnis eos obcaecati velit. A fugit aliquam quibusdam. Quam est
+                consectetur deleniti.</p>
+        </article>
+        <article>
+            <h2>Erdmännchen</h2>
+            <figure><img src="img/erdmaennchen.jpg" alt="Erdmännchen"></figure>
+            <p>Laboriosam reprehenderit voluptatem adipisci, quaerat consectetur reiciendis rem assumenda molestiae
+                excepturi rerum et nulla vel dignissimos? Omnis et fuga sit facere non exercitationem veniam alias aut
+                eos eum. Itaque, facere.</p>
+        </article>
+        <article id="giraffe">
+            <h2>Giraffe</h2>
+            <figure><img src="img/giraffe.jpg" alt="Giraffe"></figure>
+            <p>Est corporis nostrum sint itaque id possimus minima voluptates eligendi aliquid soluta reiciendis dolor
+                temporibus ducimus vel culpa accusamus, porro adipisci illo ex! Maiores quibusdam sint molestias
+                reprehenderit, animi eaque?</p>
+        </article>
+        <article>
+            <h2>Löwe</h2>
+            <figure><img src="img/loewe.jpg" alt="Löwe"></figure>
+            <p>Rem et totam ipsa eius. Laborum ducimus unde, numquam nihil sed rem quibusdam amet odit impedit sequi
+                nisi aperiam aliquam quis mollitia alias hic harum sapiente quam ipsam quo nesciunt.</p>
+        </article>
+        <article id="nashorn">
+            <h2>Nashorn</h2>
+            <figure><img src="img/nashorn.jpg" alt="Nashorn"></figure>
+            <p>Debitis commodi laboriosam, corrupti distinctio, temporibus quo ad rem obcaecati architecto hic voluptate
+                nisi dolorem unde porro magnam quas nesciunt ab aliquid suscipit! Deleniti, architecto quae. Nesciunt
+                excepturi facere quam?</p>
+        </article>
+        <article>
+            <h2>Papagei</h2>
+            <figure><img src="img/papagei.jpg" alt="Papagei"></figure>
+            <p>Unde excepturi sed saepe omnis accusamus doloribus, culpa ex aut ipsam sint dolorum aspernatur sequi quo
+                magni repudiandae debitis illo aliquam temporibus. Nobis sint neque quibusdam officia. Aliquam, sed
+                consequuntur.
+            </p>
+        </article>
+
+        <article id="pelikan">
+            <h2>Pelikan</h2>
+            <figure><img src="img/pelikan.jpg" alt="Pelikan"></figure>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque dolore, possimus laboriosam labore
+                magni animi sint porro rem tempore delectus, non quam? Tempora mollitia autem doloribus ea maiores
+                voluptatum harum?</p>
+        </article>
+        <article>
+            <h2>Rind</h2>
+            <figure><img src="img/rind.jpg" alt="Rind"></figure>
+            <p>Ipsa in deleniti consequatur maxime, mollitia officiis ab fugiat eligendi molestias saepe, voluptas omnis
+                id inventore autem consequuntur nesciunt odit obcaecati dolore necessitatibus qui assumenda totam
+                beatae. Odio, quia blanditiis.</p>
+        </article>
+        <article id="strauss">
+            <h2>Strauß</h2>
+            <figure><img src="img/strauss.jpg" alt="Strauß"></figure>
+            <p>Minus, repellat dolores blanditiis deleniti, reprehenderit nemo voluptas debitis quas, culpa
+                exercitationem facere a tempore ad ex! Reiciendis in voluptatibus minus exercitationem? Tempore facere
+                aspernatur quos soluta earum, quo culpa.</p>
+        </article>
+        <article>
+            <h2>Tiger</h2>
+            <figure><img src="img/tiger.jpg" alt="Tiger"></figure>
+            <p>Et inventore, corporis voluptates harum asperiores odio quos tempore facere, nam eos vel dolore,
+                excepturi repellat illum explicabo omnis ipsum aliquam laboriosam quam natus quis necessitatibus
+                voluptate! Beatae, sequi nulla.</p>
+        </article>
+        <article id="wolf">
+            <h2>Wolf</h2>
+            <figure><img src="img/wolf.jpg" alt="Wolf"></figure>
+            <p>Possimus laboriosam quis dolore porro quod cupiditate quidem sit quaerat aliquam expedita, libero
+                architecto eligendi adipisci aspernatur non sed cum pariatur deleniti minus ea facere maxime? Expedita
+                dolorem tempore molestias?</p>
+        </article>
+        <article>
+            <h2>Zebra</h2>
+            <figure><img src="img/zebra.jpg" alt="Zebra"></figure>
+            <p>Ad distinctio possimus corrupti veritatis voluptatum doloremque optio quos ipsum architecto doloribus
+                tempore est unde quam harum consequuntur rem officia, sint ducimus voluptatibus molestiae a soluta
+                perferendis consequatur! Vitae, suscipit.</p>
+        </article>
     </main>
 
     <footer>
@@ -32,7 +158,6 @@
         <a href="datenschutz.html">Datenschutzerklärung</a>
         <a href="anfahrt.html">Anfahrt</a>
     </footer>
-
 
 </body>
 

@@ -1,0 +1,160 @@
+/* Allgemein*/
+  html {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#fff;
+    color:#000;
+  }
+  h2 {
+    color: #13885C;  
+    margin-top:0;
+  }
+
+  a{
+    font-weight:bold;
+    color: #13885C;
+    text-decoration:none;
+  }
+  a:hover,a:focus{text-decoration:underline;}
+
+  
+  /* Hilfsklassen */
+  .col-50{
+    width:45.5%;
+    padding:2%;
+  }
+  .fl-l{float:left;}
+  
+  .fl-r{float:right;}
+
+  .clear:after {
+      content: " ";
+      display: table;
+  }
+  
+  .clear:after {clear: both;}
+  
+  .innertext{ padding:20px 0;}
+  .innertext >*{margin-left:20px;margin-right:20px;}
+
+  #wrapper {
+    margin:0 auto;
+    width:960px;
+    box-shadow: #000 5px 5px 5px;
+    border-left:1px solid #13885C; 
+    border-bottom:2.5em solid #13885C;
+  }
+  
+  #header {
+    background: #13885C url(../img/credible_hulk_comment_your_code.jpg) top left no-repeat;
+    height:163px;
+    margin-bottom: 0;
+    position:relative;
+  }
+  #header:after {
+    content:"";
+    background:url(../img/hulk.png) no-repeat;
+    background-size:contain;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width:205px;
+    height:304px;
+  }
+  
+  #header h2 {
+    font-variant: small-caps;
+    color: #fff;
+    font-size: 1.75em;
+    /* Alternativ wenn Grafik als Hintergrunddbild*/
+    /* position: absolute; */
+    /* left: 200px;
+    top: 26px; */
+    margin-left:200px;
+    padding-top:26px;
+  }
+  
+  #header h2 span {
+    display:block;
+    font-size: 2em;
+    /* Alternativ padding-left oder margin-left */
+    text-indent:0.4em;
+  }
+  #header h2 span > span {
+    display:inline;/* Überschreiben da alle spans auf Block gesetzt wurden */
+    font-size: 1em;
+    color:#000;
+
+  }
+  
+  #header h2 span + span {
+    display:block;
+    font-size: 1em;
+    /* Alternativ padding-left oder margin-left */
+    text-indent:2.9em;
+  }
+
+  /* Navi */
+  #nav {
+    background-color: #13885C;
+    margin-bottom:10px; 
+    border-bottom: 5px solid #000;
+    border-top: 5px solid #000;
+    
+  }
+  #nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  #nav li {
+    float: left;
+    padding:0 1px;
+    border-right: 1px solid #000;
+    /* background-color: #13885C; */
+    color:#fff;
+  }
+  #nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1.3em;
+    display: block;
+  }
+  
+  /* Zustände Nav */
+  #nav li:hover{
+    color: #13885C;
+    background-color: #fff;
+  }
+    
+  #nav .active, #nav .active:hover{
+    background:#fff;
+    color:#13885C;
+  }
+
+  
+  #teaser {
+    min-height:200px;
+    margin-top:10px;
+    border-bottom:2px solid #000;
+  }
+
+  #teaser a, #content a {
+    display:block;
+   }
+   
+  #article {
+    margin-left:65%;
+    padding-top:4%;
+    padding-right:2.5%;
+  }
+
+  /*#article h2,  #article p*/
+  #article > *{
+    margin-top:0;
+    margin-bottom:0.5em;
+  }
+  
+  #content {
+    margin: 10px 0;
+    padding:20px;
+  }    

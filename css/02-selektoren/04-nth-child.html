@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS nth-child</title>
+
+
+    <style>
+        main> :nth-child(1) {
+            background-color: #9d7;
+        }
+
+        main article:nth-of-type(1) {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+
+    <header>
+        <h1>CSS nth-child</h1>
+    </header>
+
+    <main>
+        <!--  article*4>(h2>{Überschrift $})+p>lorem10 -->
+        <h2>Erstes Kindelement im main</h2>
+
+        <article>
+            <h2> erstes Article im main</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, aspernatur.</p>
+        </article>
+        <article>
+            <h2>Überschrift 2</h2>
+            <p>Delectus porro atque, voluptatem deleniti quo aliquam animi debitis minus.</p>
+        </article>
+        <article>
+            <h2>Überschrift 3</h2>
+            <p>Perferendis atque quisquam sint impedit quo officiis eos tempora veritatis.</p>
+        </article>
+        <article>
+            <h2>Überschrift 4</h2>
+            <p>Provident nobis culpa itaque maxime, ea magnam omnis? Voluptas, ipsa.</p>
+        </article>
+    </main>
+</body>
+
+</html>

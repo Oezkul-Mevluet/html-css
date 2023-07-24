@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        div {
+            border: 1px solid;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .box2 {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: auto;
+        }
+
+        .box2a {
+            position: absolute;
+            top: 10px;
+            right: -50px;
+            background-color: red;
+        }
+
+        .box2b {
+            position: absolute;
+            bottom: 30px;
+            left: -30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Position absolute</h1>
+
+    <!-- div.box$*6>{Box $} -->
+
+    <div class="box1">Box 1</div>
+    <div class="box2">
+        <div class="box2a">BOX 2a</div>
+        <div class="box2b">box 2b</div>
+    </div>
+    <div class="box3">Box 3</div>
+    <div class="box4">Box 4</div>
+    <div class="box5">Box 5</div>
+    <div class="box6">Box 6</div>
+
+</body>
+
+</html>
